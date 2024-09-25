@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>telwind project</title>
+    <script
+      src="https://kit.fontawesome.com/8f9a82475c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+
+  <body class="justify-center">
+    <!-- navebar section start -->
+    <nav class="px-14 py-10 flex bg-white justify-between items-center">
+      <img src="images/Logo.svg" class="h-10" alt />
+      <div id="nav-menu" class="hidden md:flex gap-5">
+        <a href="#" class="font-medium text-xl hover:text-primary">About</a>
+        <a href="#" class="font-medium text-xl hover:text-primary">Features</a>
+        <a href="#" class="font-medium text-xl hover:text-primary">Pricing</a>
+        <a href="#" class="font-medium text-xl hover:text-primary"
+          >Testimonials</a
+        >
+        <a href="#" class="font-medium text-xl hover:text-primary">Help</a>
+      </div>
+
+      <div id="nav-signin" class="hidden md:flex gap-2 items-center">
+        <a href="#" class="text-lg font-medium hover:text-primary">SignOut</a>
+        <a
+          href="#"
+          class="text-lg font-medium border border-primary py-2 px-8 rounded-full hover:bg-primary hover:text-white"
+          >SignIn</a
+        >
+      </div>
+
+      <button class="p-2 md:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- hidden div -->
+      <div
+        id="nav-dialog"
+        class="hidden fixed px-14 py-10 bg-white md:hidden inset-0"
+      >
+        <div id="navbar" class="flex justify-between">
+          <a> <img src="images/Logo.svg" class="h-10" alt /></a>
+
+          <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="mt-6">
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-500 block rounded-lg"
+            >About</a
+          >
+
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-500 block rounded-lg"
+            >Features</a
+          >
+
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-500 block rounded-lg"
+            >Pricing</a
+          >
+
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-500 block rounded-lg"
+            >Testimonials</a
+          >
+
+          <a
+            href="#"
+            class="font-medium m-3 p-3 hover:bg-gray-500 block rounded-lg"
+            >Help</a
+          >
+        </div>
+
+        <div class="h-[1px] bg-gray-300"></div>
+        <div id="nav-signin" class="flex g mt-5 gap-6 mx-5 items-center">
+          <a
+            href="#"
+            class="text-lg font-medium border border-primary bg-primary text-white py-2 px-10 rounded hover:bg-white hover:text-primary"
+            >SignOut</a
+          >
+
+          <a
+            href="#"
+            class="text-lg font-medium border border-primary bg-primary text-white py-2 px-10 rounded hover:bg-white hover:text-primary"
+            >SignIn</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- ------------- -->
+
+    <!-- navebar section star -->
+
+    <section id="hero-section ">
+      <div class="m-auto mx-auto">
+        <div class="px-14 flex flex-col items-center gap-14 lg:flex-row mt-2">
+          <div class="basis-1/2">
+            <h1 class="mt-10">Want anything to be easy with LaslesVPN</h1>
+
+            <p class="mt-8 text-lg">
+              Provide a network for all your needs with ease and fun
+              usingLaslesVPN discover interesting features from us.
+            </p>
+
+            <button class="btn btn-blue mt-8">Get Started</button>
+          </div>
+
+          <div class="basis-1/2">
+            <img src="images/header-illustration.svg" alt />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- herosection end -->
+
+    <!-- live info -->
+
+    <section id="live_info">
+      <div class="container inline-block align-middle mt-32">
+        <div
+          class="flex flex-col md:flex-row justify-between p-8 gap-8 sm:mb-9 md:border shadow-sm mx-28"
+        >
+          <div class="flex gap-3 text-xl">
+            <img src="images/icon-location.a4285534.svg" alt />
+            <div>
+              <p class="font-semibold">90+</p>
+              <h3>user</h3>
+            </div>
+          </div>
+          <div class="flex gap-3 text-xl">
+            <img src="images/icon-server.323a2875.svg" alt />
+            <div>
+              <p>30+</p>
+              <h3>Location</h3>
+            </div>
+          </div>
+          <div class="flex gap-3 text-xl">
+            <img src="images/icon-user.68a94e35.svg" alt />
+            <div>
+              <p>50+</p>
+              <h3>Servers</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------- -->
+
+    <!-- Features section -->
+    <section id="features-section ">
+      <div class>
+        <div class="px-14 flex flex-col items-center gap-14 lg:flex-row mt-2">
+          <div class="basis-1/2 flex justify-center">
+            <img
+              class="object-contain w-full"
+              src="images/Illustration 2.c75e9726.svg"
+              alt
+            />
+          </div>
+
+          <div class="basis-1/2 space-y-6">
+            <h2 class="mt-10">
+              We Provide Many Features You <br />
+              Can Use
+            </h2>
+            
+
+            <p class="text-lg w-3/4">
+              You can explore the features that we provide with fun and have
+              their own functions each feature.
+            </p>
+
+            <ul class="space-y-3">
+              <li class="flex gap-3">
+                <figure>
+                  <img src="images/icon-check.0fbcd008.svg" alt />
+                </figure>
+                <span>Powerful online protection.</span>
+              </li>
+
+              <li class="flex gap-3">
+                <figure>
+                  <img src="images/icon-check.0fbcd008.svg" alt />
+                </figure>
+                <span> Internet without borders.</span>
+              </li>
+
+              <li class="flex gap-3">
+                <figure>
+                  <img src="images/icon-check.0fbcd008.svg" alt />
+                </figure>
+                <span>Supercharged VPN..</span>
+              </li>
+
+              <li class="flex gap-3">
+                <figure>
+                  <img src="images/icon-check.0fbcd008.svg" alt />
+                </figure>
+                <span>Supercharged VPN..</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------- -->
+
+    <!-- choose plane -->
+
+    <section id="choose-plane ">
+      <div class="container mt-32 mx-auto">
+        <div class="grid justify-center">
+          <h2>Choose Your plane</h2>
+        </div>
+        <p class="text-center text-base mt-5">
+          Let's choose the best package that is best for you and explore it
+          happily and cheerfully.
+        </p>
+        <div class="flex flex-wrap justify-between gap-7 mt-10 mx-14">
+          <div
+            class="border flex justify-center w-80 p-3 rounded bg-white border-gray-300 shadow-md hover:border-primary"
+          >
+            <div class="space-y-7">
+              <div class="flex justify-center">
+                <img src="images/Free.2120e457.svg " />
+              </div>
+
+              <h3 class="text-xl font-medium text-center">Free Plane</h3>
+              <div class="space-y-3">
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">Unlimited Bandwidth</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">Encrypted Connection</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">No Traffic Logs</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">Works on All Devices</p>
+                </div>
+              </div>
+              <h3 class="text-xl font-medium text-center">Free</h3>
+
+              <div class="flex justify-center">
+                <button
+                  class="flex justify-center border py-2 px-16 rounded-full border-primary text-primary text-lg hover:bg-primary hover:text-white"
+                >
+                  select
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border flex justify-center w-80 p-3 rounded bg-white border-gray-300 shadow-md hover:border-primary"
+          >
+            <div class="space-y-7">
+              <div class="flex justify-center">
+                <img src="images/Free.2120e457.svg " />
+              </div>
+
+              <h3 class="text-xl font-medium text-center">Free Plane</h3>
+              <div class="space-y-3">
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">Unlimited Bandwidth</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">Encrypted Connection</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">No Traffic Logs</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">Works on All Devices</p>
+                </div>
+              </div>
+              <h3 class="text-xl font-medium text-center">Free</h3>
+
+              <div class="flex justify-center">
+                <button
+                  class="flex justify-center border py-2 px-16 rounded-full border-primary text-primary text-lg hover:bg-primary hover:text-white"
+                >
+                  select
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border flex justify-center w-80 p-3 rounded bg-white border-gray-300 shadow-md hover:border-primary"
+          >
+            <div class="space-y-7">
+              <div class="flex justify-center">
+                <img src="images/Free.2120e457.svg " />
+              </div>
+
+              <h3 class="text-xl font-medium text-center">Free Plane</h3>
+              <div class="space-y-3">
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">Unlimited Bandwidth</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">Encrypted Connection</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">No Traffic Logs</p>
+                </div>
+                <div class="flex">
+                  <img
+                    src="images/icon-no-background-check.671a74d6.svg"
+                    class="justify-center"
+                    alt
+                  />
+                  <p class="text-base text-gray-600">Works on All Devices</p>
+                </div>
+              </div>
+              <h3 class="text-xl font-medium text-center">Free</h3>
+
+              <div class="flex justify-center">
+                <button
+                  class="flex justify-center border py-2 px-16 rounded-full border-primary text-primary text-lg hover:bg-primary hover:text-white"
+                >
+                  select
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="choose-plane "></section>
+      <div class="container mt-32 mx-auto">
+        <div class="grid justify-center">
+          <h2 class=" text-center">Huge Global Network of Fast VPN</h2>
+        </div>
+        <p class="text-center text-lg mt-5">
+          See LaslesVPN everywhere to make it easier for you when you move locations.
+        </p>
+       <div class=" flex justify-center mt-10">
+        <img src="images/Map.0936c513.svg" class="text" alt="">
+      
+       </div>
+
+       <figure class="flex justify-center gap-2 sm:gap-1 ">
+        <img src="images/Netflix.4e99812b.svg" alt="">
+        <img src="images/Amazon.844bee17.svg" alt="">
+        <img src="images/Discord.d3f2db43.svg" alt="">
+        <img src="images/Spot.33b28d0e.svg" alt="">
+
+       </figure>
+       
+         
+      </div>
+    </section>
+ <!-- subscription -->
+
+  <section id="review">    
+    <div class=" flex flex-col items-center gap-3 text-center mb-10 md:mb-20 space-y-5">
+      <h2>
+        Trusted by Thousands of Happy Customer
+      </h2>
+      <p class="">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+    </div>
+
+    <div class="container">
+      <div class=" box-content px-14">
+    
+          <div class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center gap-5">
+            <div class="basis-1/3 bg-white border hover:border-primary  rounded-md p-7 ">
+              <div>
+              <div class="flex ">
+                <img src="images/download (1).jpeg" class="w-12 h-12 rounded-full">
+             
+              <div class="ml-3">
+                <h4 class="text-base font-medium">Viezh Robert</h4> 
+                <p class="text-xs">Warsaw, Poland</p>           
+              </div>
+              <div class="ml-auto">
+                4.5
+                <i class="fa-regular fa-star"></i>               
+             
+              </div>             
+            </div>
+
+              </div>
+              <p class="font-Lobster mt-11"></p>
+              Wow... I am very happy to use this VPN. it turned out to be more than my expectations and so far there has been no problems. LaslesVPN always the best".
+              </p>
+            </div>
+
+            <div class="basis-1/3 bg-white border hover:border-primary rounded-md p-7 ">
+              <div>
+              <div class="flex items-center">
+                <img src="images/download (1).jpeg" class="w-12 h-12 rounded-full">
+             
+              <div class="ml-3">
+                <h4 class="text-base font-medium">Viezh Robert</h4> 
+                <p class="text-xs">Warsaw, Poland</p>           
+              </div>
+              <div class="ml-44">
+                4.5
+                <i class="fa-regular fa-star"></i>               
+             
+              </div>             
+            </div>
+
+              </div>
+              <p class="font-Lobster mt-11"></p>
+              Wow... I am very happy to use this VPN. it turned out to be more than 
+              </p>
+            </div>
+
+            <div class="basis-1/3 bg-white border hover:border-primary rounded-md p-7 ">
+              <div>
+              <div class="flex items-center">
+                <img src="images/download (1).jpeg" class="w-12 h-12 rounded-full">
+             
+              <div class="ml-3">
+                <h4 class="text-base font-medium">Viezh Robert</h4> 
+                <p class="text-xs">Warsaw, Poland</p>           
+              </div>
+              <div class="ml-44">
+                4.5
+                <i class="fa-regular fa-star"></i>               
+             
+              </div>             
+            </div>
+
+              </div>
+              <p class="font-Lobster mt-11"></p>
+              Wow... I am very happy to use this VPN. it turned out to be more than my expectations and so far there has been no problems. LaslesVPN always the best".
+              </p>
+            </div>
+
+            
+            
+            
+           
+          </div>            
+          
+        
+      </div>
+      <div class="flex justify-end gap-3 mx-14 mt-10">
+
+        <button class="border border-primary h-12 w-12 rounded-full  ">  <i class="fa-solid fa-arrow-left text-2xl text-primary"></i></button>
+        <button class="border border-primary h-12 w-12 rounded-full bg-primary  ">  <i class="fa-solid fa-arrow-right text-2xl text-white bg-primary "></i></button>
+       
+      </div>
+     
+      
+    </div>
+  </section>
+
+
+
+ 
+
+
+<!-- ------- -->
+
+  <section id="subscribe">
+    <div class=" container  mx-auto px-32 mt-20">
+
+      <div class=" flex flex-wrap justify-between items-center  border shadow-lg bg-white p-20">
+        <div class="flex flex-row">
+          <h2 class="text-3xl font-normal">Subscribe Now for Get Special Features!</h2>
+        <p>Let's subscribe with us and find the fun.</p>
+        </div>
+        <div>
+        <button class="btn btn-blue px-10 py-4">SubscribeNow</button>
+      </div>
+      </div>
+    </div>
+
+  </section>
+
+<section id="footer">
+
+  <div class="mt-20 p-16 flex  justify-between bg-stone-50">
+    
+    <div class="basis-1/2  ">
+      <div class=" block w-1/3 space-y-5" >
+        <img src="images/Logo.svg" alt="">
+
+      <p >
+        LaslesVPN is a private virtual network that has unique features and has high security.
+      </p>
+      <div class="flex gap-8">
+        <i class="fa-brands fa-facebook-f text-primary text-lg"></i>
+        <i class="fa-brands fa-twitter text-primary text-lg"></i>
+        <i class="fa-brands fa-instagram text-primary text-lg"></i>
+      </div>
+
+</div>
+      
+
+
+    </div>
+  
+    <div class=" basis-1/2 ">
+      <div class="flex justify-between ">
+    <div>
+      <h3 class="text-xl font-semibold mb-5">Product</h3>
+      <ul class="space-y-2">
+        <li> Download </li>
+        <li> Pricing </li>
+        <li> Locations </li> 
+        <li> Server </li>
+        <li> Countries</li>
+        <li> Blog</li>
+
+        
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold mb-5">Product</h3>
+      <ul class="space-y-2">
+        <li> Download </li>
+        <li> Pricing </li>
+        <li> Locations </li> 
+        <li> Server </li>
+        <li> Countries</li>
+        <li> Blog</li>
+
+        
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold mb-5">Product</h3>
+      <ul class="space-y-2">
+        <li> Download </li>
+        <li> Pricing </li>
+        <li> Locations </li> 
+        <li> Server </li>
+        <li> Countries</li>
+        <li> Blog</li>
+
+        
+      </ul>
+    </div>
+   
+
+
+    </div>
+
+  </div>
+</section>
+
+
+   
+  </body>
+  <script src="script.js"></script>
+</html>
